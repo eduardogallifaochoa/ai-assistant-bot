@@ -14,11 +14,19 @@ A **console-based chatbot** powered by **OpenAI GPT-3.5/4**, built with **Python
 
 ## ⚙️ Quick Start
 ```bash
-git clone https://github.com/yourusername/ai-assistant-bot.git
+git clone https://github.com/eduardogallifaochoa/ai-assistant-bot.git
 cd ai-assistant-bot
-python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
+python -m venv .venv
+
+# Activate the virtual environment
+# Windows (PowerShell): .venv\Scripts\Activate.ps1
+# Linux/Mac: source .venv/bin/activate
+
 pip install -r requirements.txt
+
+# Create the .env file with your OpenAI API key
 echo "OPENAI_API_KEY=your-api-key" > .env
+
 python main.py
 ```
 
