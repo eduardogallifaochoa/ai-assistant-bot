@@ -28,6 +28,7 @@ jobs:
 
       - name: Run tests with coverage
         run: |
+          export OPENAI_API_KEY="fake-key"
           coverage run -m pytest
           coverage xml  # Generate coverage.xml for Codecov
 
